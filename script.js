@@ -1,6 +1,9 @@
 document.addEventListener("click", (e) => {
-  alert("जय श्री राम!");
-    createFirework(e.clientX, e.clientY);
+  createFirework(e.clientX, e.clientY);
+  var sound = document.getElementById('clickSound');
+    sound.currentTime = 0; // Rewind to the start
+    sound.play();
+    
 });
 
 function createFirework(x, y) {
