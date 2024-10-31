@@ -1,4 +1,5 @@
 document.addEventListener("click", (e) => {
+  alert("जय श्री राम!");
     createFirework(e.clientX, e.clientY);
 });
 
@@ -26,7 +27,7 @@ function createFirework(x, y) {
         // Remove firework after animation
         firework.addEventListener("animationend", () => {
             firework.remove()
-            alert("JAI Shree Ram");
+            
         });
     }
 }
